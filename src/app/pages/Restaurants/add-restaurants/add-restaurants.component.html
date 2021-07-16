@@ -1,0 +1,644 @@
+<app-sidebar></app-sidebar>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Add New Restaurants</h1>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+            <li class="breadcrumb-item active">Add Restaurants</li>
+          </ol>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+  <div class="col-md-12">
+    <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+      <div class="row">
+        <div class="col-md-12 mx-0">
+          <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active" id="account"><strong>Rest Info</strong></li>
+              <li id="personal"><strong>Login Info</strong></li>
+              <li id="payment"><strong>Location Settings</strong></li>
+              <li id="setting"><strong>Commission Settings</strong></li>
+              <li id="timing"><strong>Timing</strong></li>
+              <li id="contact"><strong>Contact Details</strong></li>
+              <li id="confirm"><strong>Finish</strong></li>
+            </ul> <!-- fieldsets -->
+            <fieldset>
+              <div class="form-card">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest name in English</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest name in Arabic</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest slogan / tag in English</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest slogan / tag in Arabic</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest phone numbers</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="legacy" style="margin-top: 35px;">
+                      <mat-label class="matlbl">Choose Country</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="standard" style="margin-top: 23px ;width: 226px;">
+                      <mat-label class="matlbl">Zip code</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Street Address</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="standard" style="margin-top: 23px;">
+                      <mat-label class="matlbl">City</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="standard" style="margin-top: 23px;width: 226px;">
+                      <mat-label class="matlbl">State / Region</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <mat-form-field appearance="legacy" style="width: 1058px;">
+                      <mat-label class="matlbl">Choose Available Cuisine</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="legacy">
+                      <mat-label class="matlbl">Available Services</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <mat-form-field appearance="legacy">
+                      <mat-label class="matlbl">Rest status</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-3" style="margin-top: -23px;">
+                    <br />
+                    <mat-label style="font-weight: 500;" class="matlbl">Is restaurant published?</mat-label><br />
+                    <mat-checkbox style="font-weight: 500;" class="example-margin ">Click if Yes</mat-checkbox>
+                  </div>
+                  <div class="form-group col-md-3" style="margin-top: -23px;">
+                    <br />
+                    <mat-label style="font-weight: 500;" class="matlbl">Is restaurant Inside Mall?</mat-label><br />
+                    <mat-checkbox style="font-weight: 500;" class="example-margin ">Click if Yes</mat-checkbox>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest Logo</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest Website Banner</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest App Banner</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest Image Big</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest Image Small</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-label style="font-weight: 500;" class="matlbl">Upload Rest Image Original</mat-label>
+                    <div style="padding-bottom: 1.25em">
+                      <input type="file" class="dropify" data-default-file="url_of_your_file" />
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-6">
+                          <button mat-raised-button color="primary">Add Restaurant</button>
+                        </div> -->
+
+                </div>
+              </div>
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <mat-form-field appearance="standard" class="mat-form">
+                      <mat-label class="matlbl">Master E-Mail Id</mat-label>
+                      <input matInput placeholder="pat@example.com" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-4">
+                    <mat-form-field appearance="standard" class="mat-form">
+                      <mat-label class="matlbl">Login Username</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-4">
+                    <mat-form-field appearance="standard" class="mat-form">
+                      <mat-label class="matlbl">Login Password</mat-label>
+                      <input matInput [type]="hide ? 'password' : 'text'">
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'">
+                        <mat-icon>
+                          {{ hide ? 'visibility_off' : 'visibility' }}
+                        </mat-icon>
+                      </button>
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Choose Country</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Choose Country</mat-label>
+                      <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-form-field appearance="legacy" style="width: 345px;">
+                      <mat-label class="matlbl">Latitude</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-form-field appearance="legacy" style="width: 345px;">
+                      <mat-label class="matlbl">Longitude</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div><br>
+                  <div class="form-group col-md-4" style="margin-top: 23px;">
+                    <mat-label class="matlbl">Check Location</mat-label>
+                    <button mat-raised-button color="primary">Check Location</button>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <!-- insert map -->
+                    <!-- using a responsive iframe -->
+                    <div class="responsive-map-container">
+                      <!-- place the iframe code between here... -->
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786"
+                        width="600" height="450" frameborder="0" style="border:0"></iframe>
+                      <!-- ... and here -->
+                    </div>
+                    <!-- /insert map -->
+                  </div>
+
+                </div>
+
+              </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Commission on Order (%)</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Invoice Terms</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Delivered by</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest Delivery Charge Type</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6">
+                    <mat-form-field appearance="standard" class="mat-form-field-infix">
+                      <mat-label class="matlbl">Rest Delivery rate (If flat put flat rate else percentage)</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Day</th>
+                        <th>Is Working</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                      </tr>
+
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Sunday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="daySundayYes" name="isWorkingSunday" value="Yes" checked=""
+                                    autocomplete="off">
+                                  <label for="daySundayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="daySundayNo" name="isWorkingSunday" value="No"
+                                    autocomplete="off">
+                                  <label for="daySundayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+
+
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Monday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayMondayYes" name="isWorkingMonday" value="Yes" checked=""
+                                    autocomplete="off">
+                                  <label for="dayMondayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayMondayNo" name="isWorkingMonday" value="No"
+                                    autocomplete="off">
+                                  <label for="dayMondayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+
+
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Tuesday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayTuesdayYes" name="isWorkingTuesday" value="Yes" checked=""
+                                    autocomplete="off">
+                                  <label for="dayTuesdayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayTuesdayNo" name="isWorkingTuesday" value="No"
+                                    autocomplete="off">
+                                  <label for="dayTuesdayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+
+
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Wednesday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayWednesdayYes" name="isWorkingWednesday" value="Yes"
+                                    checked="" autocomplete="off">
+                                  <label for="dayWednesdayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayWednesdayNo" name="isWorkingWednesday" value="No"
+                                    autocomplete="off">
+                                  <label for="dayWednesdayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+
+
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="17:55:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Thursday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayThursdayYes" name="isWorkingThursday" value="Yes"
+                                    checked="" autocomplete="off">
+                                  <label for="dayThursdayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayThursdayNo" name="isWorkingThursday" value="No"
+                                    autocomplete="off">
+                                  <label for="dayThursdayNo">No</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Friday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayFridayYes" name="isWorkingFriday" value="Yes" checked=""
+                                    autocomplete="off">
+                                  <label for="dayFridayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="dayFridayNo" name="isWorkingFriday" value="No"
+                                    autocomplete="off">
+                                  <label for="dayFridayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" class="form-control" value="Saturday" name="dayOFWeek[]" readonly=""
+                            autocomplete="off"></td>
+                        <td>
+                          <div class="col-md-12">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="daySaturdayYes" name="isWorkingSaturday" value="Yes"
+                                    checked="" autocomplete="off">
+                                  <label for="daySaturdayYes">Yes</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="radio-custom radio-primary">
+                                  <input type="radio" id="daySaturdayNo" name="isWorkingSaturday" value="No"
+                                    autocomplete="off">
+                                  <label for="daySaturdayNo">No</label>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="openingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="00:00:00" autocomplete="off">
+                        </td>
+                        <td>
+                          <input class="timepicker form-control" type="text" name="closingTime[]"
+                            data-plugin="clockpicker" data-autoclose="true" value="23:59:00" autocomplete="off">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <mat-form-field appearance="outline">
+                      <input matInput placeholder="Placeholder">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-3">
+                    <mat-form-field appearance="outline">
+                      <input matInput placeholder="Placeholder">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-3">
+                    <mat-form-field appearance="outline">
+                      <input matInput placeholder="Placeholder">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-3">
+                    <mat-form-field appearance="outline">
+                      <input matInput placeholder="Placeholder">
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next Step" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <h2 class="fs-title text-center">Success !</h2> <br><br>
+                <div class="row justify-content-center">
+                  <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image">
+                  </div>
+                </div> <br><br>
+                <div class="row justify-content-center">
+                  <div class="col-7 text-center">
+                    <h5>You Have Successfully Signed Up</h5>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content -->
+
+  <!-- /.content -->
+  <!-- model -->
+  <!-- end model -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- /.content-wrapper -->
